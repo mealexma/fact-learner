@@ -1,9 +1,29 @@
 const birds = [
-  {id:'passer-domesticus',scientific:'Passer domesticus',en:'House sparrow',sv:'Gråsparv',zh:'Jiā má què',image:'images/sparrow.jpg',credit:'Charles J. Sharp · CC BY-SA 3.0',source:'https://commons.wikimedia.org/wiki/File:House_sparrow_(Passer_domesticus).jpg'},
-  {id:'anas-platyrhynchos',scientific:'Anas platyrhynchos',en:'Mallard',sv:'Gräsand',zh:'Lǜ tóu yā',image:'images/mallard.jpg',credit:'Imran Shah · CC BY-SA 2.0',source:'https://commons.wikimedia.org/wiki/File:Mallard_(Anas_platyrhynchos)_(26436726209).jpg'},
-  {id:'pica-pica',scientific:'Pica pica',en:'Eurasian magpie',sv:'Skata',zh:'Ōu yà xǐ què',image:'images/magpie.jpg',credit:'Alexis Lours · CC BY 4.0',source:'https://commons.wikimedia.org/wiki/File:Eurasian_magpie_(Pica_pica).jpg'},
-  {id:'parus-major',scientific:'Parus major',en:'Great tit',sv:'Talgoxe',zh:'Ōu yà dà shān què',image:'images/great-tit.jpg',credit:'caroline legg · CC BY 2.0',source:'https://commons.wikimedia.org/wiki/File:Great_tit_-_Parus_major_(51988627968).jpg'},
-  {id:'cyanistes-caeruleus',scientific:'Cyanistes caeruleus',en:'Eurasian blue tit',sv:'Blåmes',zh:'Lán shān què',image:'images/blue-tit.jpg',credit:'TRinaud · CC BY 4.0',source:'https://commons.wikimedia.org/wiki/File:Eurasian_blue_tit_(Cyanistes_caeruleus)_2021.jpg'}
+  {id:'passer-domesticus',scientific:'Passer domesticus',en:'House sparrow',sv:'Gråsparv',zh:'家麻雀',pinyin:'jiā má què',image:'images/sparrow.jpg',credit:'Charles J. Sharp · CC BY-SA 3.0',source:'https://commons.wikimedia.org/wiki/File:House_sparrow_(Passer_domesticus).jpg'},
+  {id:'anas-platyrhynchos',scientific:'Anas platyrhynchos',en:'Mallard',sv:'Gräsand',zh:'绿头鸭',pinyin:'lǜ tóu yā',image:'images/mallard.jpg',credit:'Imran Shah · CC BY-SA 2.0',source:'https://commons.wikimedia.org/wiki/File:Mallard_(Anas_platyrhynchos)_(26436726209).jpg'},
+  {id:'pica-pica',scientific:'Pica pica',en:'Eurasian magpie',sv:'Skata',zh:'欧亚喜鹊',pinyin:'ōu yà xǐ què',image:'images/magpie.jpg',credit:'Alexis Lours · CC BY 4.0',source:'https://commons.wikimedia.org/wiki/File:Eurasian_magpie_(Pica_pica).jpg'},
+  {id:'parus-major',scientific:'Parus major',en:'Great tit',sv:'Talgoxe',zh:'欧亚大山雀',pinyin:'ōu yà dà shān què',image:'images/great-tit.jpg',credit:'caroline legg · CC BY 2.0',source:'https://commons.wikimedia.org/wiki/File:Great_tit_-_Parus_major_(51988627968).jpg'},
+  {id:'cyanistes-caeruleus',scientific:'Cyanistes caeruleus',en:'Eurasian blue tit',sv:'Blåmes',zh:'蓝山雀',pinyin:'lán shān què',image:'images/blue-tit.jpg',credit:'TRinaud · CC BY 4.0',source:'https://commons.wikimedia.org/wiki/File:Eurasian_blue_tit_(Cyanistes_caeruleus)_2021.jpg'},
+  {id:'turdus-merula',scientific:'Turdus merula',en:'Common Blackbird',sv:'koltrast',zh:'欧亚乌鸫',pinyin:'ōu yà wū dōng',image:'images/turdus-merula.jpg',credit:'Kahvilokki · CC BY-SA 4.0',source:'https://commons.wikimedia.org/wiki/File:20190722_Turdus_Merula_02.jpg'},
+  {id:'erithacus-rubecula',scientific:'Erithacus rubecula',en:'European robin',sv:'rödhake',zh:'欧亚鸲',pinyin:'ōu yà qú',image:'images/erithacus-rubecula.jpg',credit:'Francis C. Franklin · CC BY-SA 3.0',source:'https://commons.wikimedia.org/wiki/File:Erithacus_rubecula_with_cocked_head.jpg'},
+  {id:'fringilla-coelebs',scientific:'Fringilla coelebs',en:'Eurasian Chaffinch',sv:'bofink',zh:'苍头燕雀',pinyin:'cāng tóu yàn què',image:'images/fringilla-coelebs.jpg',credit:'Gilles San Martin from Namur, Belgium · CC BY-SA 2.0',source:'https://commons.wikimedia.org/wiki/File:Fringilla_coelebs_(5577610542).jpg'},
+  {id:'chloris-chloris',scientific:'Chloris chloris',en:'European Greenfinch',sv:'grönfink',zh:'欧金翅雀',pinyin:'ōu jīn chì què',image:'images/chloris-chloris.jpg',credit:'Estormiz · CC0',source:'https://commons.wikimedia.org/wiki/File:Carduelis_chloris_Oulu_20120507.JPG'},
+  {id:'pyrrhula-pyrrhula',scientific:'Pyrrhula pyrrhula',en:'Eurasian Bullfinch',sv:'domherre',zh:'红腹灰雀',pinyin:'hóng fù huī què',image:'images/pyrrhula-pyrrhula.jpg',credit:'Francis Franklin · CC BY-SA 3.0',source:'https://commons.wikimedia.org/wiki/File:Bullfinch_male.jpg'},
+  {id:'carduelis-carduelis',scientific:'Carduelis carduelis',en:'European Goldfinch',sv:'steglits',zh:'红额金翅雀',pinyin:'hóng é jīn chì què',image:'images/carduelis-carduelis.jpg',credit:'Pierre Dalous · CC BY-SA 3.0',source:'https://commons.wikimedia.org/wiki/File:Carduelis_carduelis_(2012).jpg'},
+  {id:'sturnus-vulgaris',scientific:'Sturnus vulgaris',en:'Common Starling',sv:'stare',zh:'紫翅椋鸟',pinyin:'zǐ chì liáng niǎo',image:'images/sturnus-vulgaris.jpg',credit:'marsupium photography · CC BY-SA 2.0',source:'https://commons.wikimedia.org/wiki/File:Common_Starling,_Blyth_(12598795653).jpg'},
+  {id:'coloeus-monedula',scientific:'Coloeus monedula',en:'Western Jackdaw',sv:'kaja',zh:'寒鸦',pinyin:'hán yā',image:'images/coloeus-monedula.jpg',credit:'Darkone · CC BY-SA 2.5',source:'https://commons.wikimedia.org/wiki/File:Dohle_(Corvus_monedula)_d1.jpg'},
+  {id:'corvus-cornix',scientific:'Corvus cornix',en:'Hooded Crow',sv:'gråkråka',zh:'冠小嘴乌鸦',pinyin:'guān xiǎo zuǐ wū yā',image:'images/corvus-cornix.jpg',credit:'Donald Hobern from Copenhagen, Denmark · CC BY 2.0',source:'https://commons.wikimedia.org/wiki/File:Corvus_cornix_(33515567265).jpg'},
+  {id:'corvus-corax',scientific:'Corvus corax',en:'Northern Raven',sv:'korp',zh:'渡鸦',pinyin:'dù yā',image:'images/corvus-corax.jpg',credit:'Accipiter (R. Altenkamp, Berlin) · CC BY-SA 3.0',source:'https://commons.wikimedia.org/wiki/File:Corvus_corax_ad_berlin_090516.jpg'},
+  {id:'corvus-frugilegus',scientific:'Corvus frugilegus',en:'Rook',sv:'råka',zh:'秃鼻乌鸦',pinyin:'tū bí wū yā',image:'images/corvus-frugilegus.jpg',credit:'Brian Snelson from Hockley, Essex, England · CC BY 2.0',source:'https://commons.wikimedia.org/wiki/File:Corvus_frugilegus_-Dartmoor,_Devon,_England-8.jpg'},
+  {id:'columba-palumbus',scientific:'Columba palumbus',en:'Common Wood Pigeon',sv:'ringduva',zh:'斑尾林鸽',pinyin:'bān wěi lín gē',image:'images/columba-palumbus.jpg',credit:'Don Loarie · CC BY 4.0',source:'https://commons.wikimedia.org/wiki/File:Columba_palumbus_ssp._palumbus.jpg'},
+  {id:'columba-livia',scientific:'Columba livia',en:'Rock Dove',sv:'klippduva',zh:'原鸽',pinyin:'yuán gē',image:'images/columba-livia.jpg',credit:'william_stephens · CC BY 4.0',source:'https://commons.wikimedia.org/wiki/File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg'},
+  {id:'dendrocopos-major',scientific:'Dendrocopos major',en:'Great Spotted Woodpecker',sv:'Större hackspett',zh:'大斑啄木鸟',pinyin:'dà bān zhuó mù niǎo',image:'images/dendrocopos-major.jpg',credit:'Bengt Nyman from Vaxholm, Sweden · CC BY 2.0',source:'https://commons.wikimedia.org/wiki/File:Dendrocopos_major_EM1B2679_(35219263071).jpg'},
+  {id:'sitta-europaea',scientific:'Sitta europaea',en:'Eurasian Nuthatch',sv:'nötväcka',zh:'普通䴓',pinyin:'pǔ tōng shī',image:'images/sitta-europaea.jpg',credit:'Stefan Berndtsson · CC BY 2.0',source:'https://commons.wikimedia.org/wiki/File:Sitta_europaea_europaea,_Slottsskogen,_G%C3%B6teborg,_Sweden_3.jpg'},
+  {id:'apus-apus',scientific:'Apus apus',en:'Common Swift',sv:'tornseglare',zh:'普通楼燕',pinyin:'pǔ tōng lóu yàn',image:'images/apus-apus.jpg',credit:'Alexis Lours · CC BY 4.0',source:'https://commons.wikimedia.org/wiki/File:Common_Swift_2025_07_18_02_(cropped).jpg'},
+  {id:'hirundo-rustica',scientific:'Hirundo rustica',en:'Barn Swallow',sv:'Ladusvala',zh:'家燕',pinyin:'jiā yàn',image:'images/hirundo-rustica.jpg',credit:'Morhaf Aljanee · CC BY-SA 3.0',source:'https://commons.wikimedia.org/wiki/File:Barn_Swallow_(95504589).jpeg'},
+  {id:'motacilla-alba',scientific:'Motacilla alba',en:'White wagtail',sv:'sädesärla',zh:'白鹡鸰',pinyin:'bái jí líng',image:'images/motacilla-alba.jpg',credit:'Jac. Janssen from BAARLO LB, NL · CC BY 2.0',source:'https://commons.wikimedia.org/wiki/File:20180415_015_Winterswijk_Witte_kwikstaart_(40785272624).jpg'},
+  {id:'turdus-pilaris',scientific:'Turdus pilaris',en:'Fieldfare',sv:'björktrast',zh:'田鸫',pinyin:'tián dōng',image:'images/turdus-pilaris.jpg',credit:'Frankie Fouganthin · CC BY-SA 4.0',source:'https://commons.wikimedia.org/wiki/File:Bj%C3%B6rktrast_(Turdus_pilaris)-4.jpg'},
+  {id:'turdus-philomelos',scientific:'Turdus philomelos',en:'Song Thrush',sv:'taltrast',zh:'欧歌鸫',pinyin:'ōu gē dōng',image:'images/turdus-philomelos.jpg',credit:'Charles J. Sharp · CC BY-SA 4.0',source:'https://commons.wikimedia.org/wiki/File:Song_thrush_(Turdus_philomelos_philomelos).jpg'}
 ];
 const spanish = [
   {id:'chico',es:'Chico',sv:'kille',image:'images/spanish/chico.png'},
@@ -19,7 +39,7 @@ const spanish = [
   {id:'pero',es:'Pero',sv:'men',image:'images/spanish/conversacion.png'}
 ];
 const topics = {
-  birds:{title:'Birds',subtitle:'Five familiar species · English, Swedish, Mandarin pinyin',image:'images/blue-tit.jpg',items:birds,languages:[['en','English'],['sv','Swedish'],['zh','Mandarin pinyin']]},
+  birds:{title:'Birds',subtitle:'25 birds found in Sweden · English, Swedish, Mandarin',image:'images/blue-tit.jpg',items:birds,languages:[['en','English'],['sv','Swedish'],['zh','Mandarin']]},
   spanish:{title:'Kapitelord 1–4',subtitle:'Spanish homework · 1 October',image:'images/spanish/ciudad.png',items:spanish,languages:[['es','Spanish'],['sv','Swedish']]}
 };
 const KEY='fact-learner-v1';
@@ -45,10 +65,10 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const topic=()=>topics[state.topicId];
 const practiceState=()=>state.practices[state.topicId];
 const shuffle=items=>{const result=[...items];for(let i=result.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[result[i],result[j]]=[result[j],result[i]]}return result};
-function practiceQueue(){const p=practiceState(),ids=topic().items.map(item=>item.id);if(!Array.isArray(p.queue)){p.queue=shuffle(ids);save()}else{p.queue=p.queue.filter(id=>ids.includes(id));}return p.queue}
+function practiceQueue(){const p=practiceState(),ids=topic().items.map(item=>item.id);if(!Array.isArray(p.queue)){p.queue=shuffle(ids);p.catalog=ids;save()}else{const known=p.catalog|| (state.topicId==='birds'?birds.slice(0,5).map(x=>x.id):ids);p.queue=p.queue.filter(id=>ids.includes(id));const added=ids.filter(id=>!known.includes(id));if(added.length)p.queue.push(...shuffle(added));p.catalog=ids;if(added.length)save()}return p.queue}
 const matchState=()=>state.matches[state.topicId];
 const itemImage=(item,hidden=false)=>`<img class="hero-img" src="${item.image}" alt="${hidden?'Illustration or photo; answer hidden until reveal':esc(item.en||item.es)}">`;
-const itemNames=item=>state.topicId==='birds'?`<dl class="names"><dt>English</dt><dd>${esc(item.en)}</dd><dt>Swedish</dt><dd>${esc(item.sv)}</dd><dt>Mandarin pinyin</dt><dd>${esc(item.zh)}</dd></dl>`:`<dl class="names"><dt>Spanish</dt><dd>${esc(item.es)}</dd><dt>Swedish</dt><dd>${esc(item.sv)}</dd></dl>`;
+const itemNames=item=>state.topicId==='birds'?`<dl class="names"><dt>English</dt><dd>${esc(item.en)}</dd><dt>Swedish</dt><dd>${esc(item.sv)}</dd><dt>Mandarin</dt><dd>${esc(item.zh)} (${esc(item.pinyin)})</dd></dl>`:`<dl class="names"><dt>Spanish</dt><dd>${esc(item.es)}</dd><dt>Swedish</dt><dd>${esc(item.sv)}</dd></dl>`;
 const credit=item=>item.source?`<p class="credit">Photo: <a href="${item.source}" target="_blank" rel="noopener">${esc(item.credit)}</a></p>`:'';
 const back=()=>`<button class="back" data-page="home">← All topics</button>`;
 const nav=()=>`<div class="topic-nav"><button class="btn secondary" data-page="topic">Overview</button><button class="btn secondary" data-page="learn">Learn</button><button class="btn secondary" data-page="practice">Practice</button><button class="btn secondary" data-page="match">Match</button></div>`;
@@ -69,7 +89,7 @@ function bind(){
     const mode=document.querySelector('#mode');if(mode)mode.onchange=e=>{p.mode=e.target.value;p.revealed=false;save();render()};
     const reveal=document.querySelector('#reveal');if(reveal)reveal.onclick=()=>{p.revealed=true;save();render()};
     for(const [id,val] of [['again','again'],['got','got']]){const x=document.querySelector('#'+id);if(x)x.onclick=()=>{const itemId=p.queue.shift();p.results[itemId]=val;if(val==='again'){const position=1+Math.floor(Math.random()*p.queue.length);p.queue.splice(position,0,itemId)}p.revealed=false;save();render()}}
-    const restart=document.querySelector('#restart');if(restart)restart.onclick=()=>{p.queue=shuffle(t.items.map(x=>x.id));p.revealed=false;save();render()};
+    const restart=document.querySelector('#restart');if(restart)restart.onclick=()=>{p.queue=shuffle(t.items.map(x=>x.id));p.catalog=t.items.map(x=>x.id);p.revealed=false;save();render()};
   }
   if(state.page==='match'){
     const m=matchState();
