@@ -1,16 +1,16 @@
-# Fact Learner — five-bird slice
+# Fact Learner — Birds and Kapitelord 1–4
 
-A separate, dependency-free static web app inspired by Interval's single-page structure, dark mobile layout, and versioned browser-local storage. Bird photos are bundled locally. It does not read or modify Interval data.
+A separate, dependency-free static web app inspired by Interval's single-page structure and browser-local storage. Bird photos and Spanish vocabulary illustrations are bundled locally. It does not read or modify Interval data.
 
 ## Run
 
 From this folder, serve static files with any local HTTP server, for example `npx serve .` then open the URL shown. Node 20 is sufficient; no package install or build step is required. Opening `index.html` directly also works in modern browsers. Data is stored in this browser's `localStorage` under `fact-learner-v1`; it persists across reloads on the same origin and browser profile. That key is distinct from Interval's, including when both apps share a GitHub Pages origin. There is no cross-device sync or backup yet; two devices do not share practice or match progress.
 
-Confirmed use: both people can study the same bundled bird pack on their own devices, then play the spoken Match together on one device. Each browser keeps its own Practice progress and Match state. Editable player names are labels, not accounts. All app assets use relative paths, so the static build is compatible with a GitHub Pages project subpath. Live app: https://mealexma.github.io/fact-learner/ . Source repository: https://github.com/mealexma/fact-learner .
+Confirmed use: both people can study the same bundled packs on their own devices, then play a spoken Match together on one device. Each browser keeps its own Practice progress and Match state, now separately for each topic. Existing bird progress from the first version is retained. Editable player names are labels, not accounts. All app assets use relative paths, so the static build is compatible with a GitHub Pages project subpath. Live app: https://mealexma.github.io/fact-learner/ . Source repository: https://github.com/mealexma/fact-learner .
 
 ## Flow
 
-The Topics home screen starts with Birds and leaves room for future packs. Learn lists five species and credits. Practice lets you choose picture-only or an English, Swedish, or pinyin prompt, reveal all names, then mark Again or Got it. Match is a spoken two-player game with a photo prompt and no answer list. Give each language point to its speaker, then use Next turn or Pass to alternate naming turns and advance to the next bird. Undo restores the preceding score, turn, or bird. End match shows totals. Players decide valid answers and repeats verbally. A language scores once within each bird round.
+The Topics home screen lists Birds and Kapitelord 1–4. Open a topic first, then choose Learn, Practice, or Match. Practice fills the screen and keeps answers hidden until Reveal. Birds supports picture-only and language prompts; Spanish uses Spanish or Swedish written prompts because several words share contextual illustrations. Again/Got it persists separately by topic. Match keeps answers verbal: Birds shows a photo and scores up to three language points per round; Spanish shows a Swedish prompt and scores one spoken Spanish answer. Points go to the speaker, including partner bonuses. Next turn or Pass advances the item and alternates naming turns; Undo restores the previous score, turn, and item. End match shows totals. Players judge correctness and repeats verbally.
 
 ## Source inspection and estimate
 
@@ -18,4 +18,4 @@ Interval repository: `https://github.com/mealexma/Interval`, local project path 
 
 ## Content
 
-See [credits.html](credits.html) for photo sources and license links. Scientific names are stable internal IDs. Pinyin has tone marks, with no Han characters shown in the app. Great tit uses the species-specific Mandarin name for *Parus major*; Eurasian magpie uses the species-specific name for *Pica pica* because the broader magpie label can include another species.
+See [credits.html](credits.html) for bird photo sources and license links. Scientific names are stable bird IDs. Pinyin has tone marks, with no Han characters shown in the app. Great tit uses the species-specific Mandarin name for *Parus major*; Eurasian magpie uses the species-specific name for *Pica pica* because the broader magpie label can include another species. The Spanish pack follows the 11 user-supplied word pairs for homework on 1 October; *también* and affirmative *sí* use standard accent marks. Four original generated illustrations are reused as context for related words, so they are not one-to-one picture answers.
