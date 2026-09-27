@@ -10,7 +10,7 @@ Confirmed use: both people can study the same bundled bird pack on their own dev
 
 ## Flow
 
-Learn lists five species and credits. Practice lets you choose picture-only or an English, Swedish, or pinyin prompt, reveal all names, then mark Again or Got it. Match is a spoken two-player game. Choose the bird being scored, give each language point to its speaker, then use Next turn or Pass. Undo restores the preceding score, turn, or bird selection. End match shows totals. Players decide valid answers and repeats verbally. Match round scoring resets when the bird or turn changes; a language scores once within that round. The species selector is an optional reference and score tracker, not a photo prompt.
+The Topics home screen starts with Birds and leaves room for future packs. Learn lists five species and credits. Practice lets you choose picture-only or an English, Swedish, or pinyin prompt, reveal all names, then mark Again or Got it. Match is a spoken two-player game with a photo prompt and no answer list. Give each language point to its speaker, then use Next turn or Pass to alternate naming turns and advance to the next bird. Undo restores the preceding score, turn, or bird. End match shows totals. Players decide valid answers and repeats verbally. A language scores once within each bird round.
 
 ## Source inspection and estimate
 
