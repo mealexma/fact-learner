@@ -6,7 +6,7 @@ A separate, dependency-free static web app inspired by Interval's single-page st
 
 From this folder, serve static files with any local HTTP server, for example `npx serve .` then open the URL shown. Node 20 is sufficient; no package install or build step is required. Opening `index.html` directly also works in modern browsers. Data is stored in this browser's `localStorage` under `fact-learner-v1`; it persists across reloads on the same origin and browser profile. That key is distinct from Interval's, including when both apps share a GitHub Pages origin. There is no cross-device sync or backup yet; two devices do not share practice or match progress.
 
-Confirmed use: both people can study the same bundled bird pack on their own devices, then play the spoken Match together on one device. Each browser keeps its own Practice progress and Match state. Editable player names are labels, not accounts. All app assets use relative paths, so the static build is compatible with a GitHub Pages project subpath. No publication or deployment has been made for this slice.
+Confirmed use: both people can study the same bundled bird pack on their own devices, then play the spoken Match together on one device. Each browser keeps its own Practice progress and Match state. Editable player names are labels, not accounts. All app assets use relative paths, so the static build is compatible with a GitHub Pages project subpath. Source repository: https://github.com/mealexma/fact-learner. GitHub Pages must be enabled separately before the public test URL works.
 
 ## Flow
 
