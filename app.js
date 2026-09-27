@@ -88,7 +88,7 @@ function bind(){
     const p=practiceState(),t=topic();
     const mode=document.querySelector('#mode');if(mode)mode.onchange=e=>{p.mode=e.target.value;p.revealed=false;save();render()};
     const reveal=document.querySelector('#reveal');if(reveal)reveal.onclick=()=>{p.revealed=true;save();render()};
-    for(const [id,val] of [['again','again'],['got','got']]){const x=document.querySelector('#'+id);if(x)x.onclick=()=>{const itemId=p.queue.shift();p.results[itemId]=val;if(val==='again'){const position=1+Math.floor(Math.random()*p.queue.length);p.queue.splice(position,0,itemId)}p.revealed=false;save();render()}}
+    for(const [id,val] of [['again','again'],['got','got']]){const x=document.querySelector('#'+id);if(x)x.onclick=()=>{const itemId=p.queue.shift();p.results[itemId]=val;p.queue=shuffle(p.queue);if(val==='again'){const position=p.queue.length?1+Math.floor(Math.random()*p.queue.length):0;p.queue.splice(position,0,itemId)}p.revealed=false;save();render()}}
     const restart=document.querySelector('#restart');if(restart)restart.onclick=()=>{p.queue=shuffle(t.items.map(x=>x.id));p.catalog=t.items.map(x=>x.id);p.revealed=false;save();render()};
   }
   if(state.page==='match'){
