@@ -1,6 +1,6 @@
 # Fact Learner — Birds and Kapitelord 1–4
 
-A separate, dependency-free static web app inspired by Interval's single-page structure and browser-local storage. Bird photos and Spanish vocabulary illustrations are bundled locally. It does not read or modify Interval data.
+A separate, dependency-free static web app inspired by Interval's single-page structure and browser-local storage. Bird, tree, and flower photos plus Spanish vocabulary illustrations are bundled locally. It does not read or modify Interval data.
 
 ## Run
 
@@ -10,7 +10,7 @@ Confirmed use: both people can study the same bundled packs on their own devices
 
 ## Flow
 
-The Topics home screen lists Birds and Kapitelord 1–4. Open a topic first, then choose Learn, Practice, or Match. Practice fills the screen and keeps answers hidden until Reveal. Birds supports picture-only and language prompts; Spanish uses Spanish or Swedish written prompts because several words share contextual illustrations. Practice randomly chooses from remaining items after every answer; Got it removes an item for the current session, while Again returns it later. Progress persists separately by topic. Match keeps answers verbal: Birds shows a photo and scores up to three language points per round; Spanish shows a Swedish prompt and scores one spoken Spanish answer. Points go to the speaker, including partner bonuses. Next turn or Pass advances the item and alternates naming turns; Undo restores the previous score, turn, and item. End match shows totals. Players judge correctness and repeats verbally.
+The Topics home screen lists Birds, Trees, Flowers, and Kapitelord 1–4. Open a topic first, then choose Learn, Practice, or Match. Practice fills the screen and keeps answers hidden until Reveal. Birds, Trees, and Flowers support picture-only and language prompts; Spanish uses Spanish or Swedish written prompts because several words share contextual illustrations. Practice randomly chooses from remaining items after every answer; Got it removes an item for the current session, while Again returns it later. Progress persists separately by topic. Match keeps answers verbal: Nature topics show a photo and score up to three language points per round; Spanish shows a Swedish prompt and scores one spoken Spanish answer. Points go to the speaker, including partner bonuses. Next turn or Pass advances the item and alternates naming turns; Undo restores the previous score, turn, and item. End match shows totals. Players judge correctness and repeats verbally.
 
 ## Source inspection and estimate
 
@@ -18,4 +18,4 @@ Interval repository: `https://github.com/mealexma/Interval`, local project path 
 
 ## Content
 
-See [credits.html](credits.html) for all 25 bird photo sources, reusable licenses, and species-name records. Scientific names are stable bird IDs. Mandarin appears as Chinese characters with tone-marked pinyin. Great tit uses the species-specific Mandarin name for *Parus major*; Eurasian magpie uses the species-specific name for *Pica pica*. The Spanish pack follows the 11 user-supplied word pairs for homework on 1 October; *también* and affirmative *sí* use standard accent marks. Four original generated illustrations are reused as context for related words, so they are not one-to-one picture answers.
+See [credits.html](credits.html) for all bird, tree, and flower photo sources, reusable licenses, and taxon-name records. Scientific names are stable bird IDs. Mandarin appears as Chinese characters with tone-marked pinyin. Great tit uses the species-specific Mandarin name for *Parus major*; Eurasian magpie uses the species-specific name for *Pica pica*. The Spanish pack follows the 11 user-supplied word pairs for homework on 1 October; *también* and affirmative *sí* use standard accent marks. Four original generated illustrations are reused as context for related words, so they are not one-to-one picture answers.
